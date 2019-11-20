@@ -81,7 +81,7 @@ namespace ConsoleApp3
         {
             System.Text.ASCIIEncoding AsciiEncoding = new System.Text.ASCIIEncoding();
             
-            byte[] Checksum = AsciiEncoding.GetBytes("Checksum"); // String to bytes
+            byte[] Checksum = AsciiEncoding.GetBytes("Checksum");
 
             byte checksum;
             byte[] testVal = Checksum;
