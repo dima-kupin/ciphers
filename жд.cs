@@ -29,7 +29,6 @@ namespace ЖД
                 Console.Write(nums[i]);
             }
             Console.ReadKey();
-            //БОЛЬШЕ ЦИФР И НЕ НАДО ПО ДОКУ СУПРУН (ТОЛЬКО 5)
         }
     }
 }
