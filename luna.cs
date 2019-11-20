@@ -14,40 +14,11 @@ namespace Luna
         
         public static Dictionary<char, int> alphabet = new Dictionary<char, int>
         {
-                    { 'А', 1 },
-                    { 'Б', 2 },
-                    { 'В', 3 },
-                    { 'Г', 4 },
-                    { 'Д', 5 },
-                    { 'Е', 6 },
-                    { 'Ё', 7 },
-                    { 'Ж', 8 },
-                    { 'З', 9 },
-                    { 'И', 10 },
-                    { 'Й', 11 },
-                    { 'К', 12 },
-                    { 'Л', 13 },
-                    { 'М', 14 },
-                    { 'Н', 15 },
-                    { 'О', 16 },
-                    { 'П', 17 },
-                    { 'Р', 18 },
-                    { 'С', 19 },
-                    { 'Т', 20 },
-                    { 'У', 21 },
-                    { 'Ф', 22 },
-                    { 'Х', 23 },
-                    { 'Ц', 24 },
-                    { 'Ч', 25 },
-                    { 'Ш', 26 },
-                    { 'Щ', 27 },
-                    { 'Ъ', 28 },
-                    { 'Ы', 29 },
-                    { 'Ь', 30 },
-                    { 'Э', 31 },
-                    { 'Ю', 32 },
-                    { 'Я', 33 },
-                    { ' ', 1111 }
+                    { 'А', 1 },  { 'Б', 2 },  { 'В', 3 },  { 'Г', 4 },  { 'Д', 5 },  { 'Е', 6 },  { 'Ё', 7 },  { 'Ж', 8 },
+                    { 'З', 9 },  { 'И', 10 }, { 'Й', 11 }, { 'К', 12 }, { 'Л', 13 }, { 'М', 14 }, { 'Н', 15 }, { 'О', 16 },
+                    { 'П', 17 }, { 'Р', 18 }, { 'С', 19 }, { 'Т', 20 }, { 'У', 21 }, { 'Ф', 22 }, { 'Х', 23 }, { 'Ц', 24 },
+                    { 'Ч', 25 }, { 'Ш', 26 }, { 'Щ', 27 }, { 'Ъ', 28 }, { 'Ы', 29 }, { 'Ь', 30 }, { 'Э', 31 }, { 'Ю', 32 },
+                    { 'Я', 33 }, { ' ', 1111 }
         };
         public static int[] StringToArrayNumberPos(string _stringchar)
         {
@@ -129,7 +100,6 @@ namespace Luna
                     listEven.Add(arr[i + 1]);
                 }
             }
-            //////////////////////////////////
             Console.WriteLine();
             Console.Write("1) (i*2) mod 9: ");
             for (int i = 0; i < list.Count; i++)
@@ -137,19 +107,16 @@ namespace Luna
                 Console.Write(list[i] + " ");
             }
             Console.WriteLine();
-            /////////////////////////////////
             for (int i = 0; i < list.Count; i++)
             {
                 Sum += list[i];
             }
             Console.WriteLine("2) Sum is: " + Sum);
-            /////////////////////////////////
             for (int i = 0; i < listEven.Count - 1; i++)
             {
                 evenSum += listEven[i];
             }
             Console.WriteLine("3) Sum of even numbers is: " + evenSum);
-            /////////////////////////////////
             if ((Sum + evenSum + CD) % 10 == 0)
             {
                 Console.WriteLine("4) RESULT CD: " + CD);
@@ -170,7 +137,6 @@ namespace Luna
                     Console.Write(arr[i] + " ");
                 }
             }
-            ////////////////////////////////
             
             
         }
